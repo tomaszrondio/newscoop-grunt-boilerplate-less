@@ -2,7 +2,7 @@
 
 ## What is that?
 
-This is a Newscoop theme boilerplate with Grunt workflow.
+This is a Newscoop theme boilerplate for Grunt workflow.
 
 ## How to install
 You need node.js, npm and grunt CLI.
@@ -44,7 +44,7 @@ Type 'grunt watch' in console and forget about it. It does it's magic automatica
 
 It watches for changes in less and js files.
 
-#### CSS
+##### CSS
 
 - less gets compiled to style.css
 - style.css gets autoprefixed
@@ -69,7 +69,7 @@ a{
 ```
 
 
-#### Javascript
+##### Javascript
 
 js files are merged to two files:
 - vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
@@ -77,9 +77,12 @@ js files are merged to two files:
 
 ### Build
 
-It does everything that "watch" task does plus it minifies js and css.
-
 This one is for deployment
+
+It does everything that "watch" task does plus it minifies both js and css.
+Use it before deployment.
+
+
 ```
 grunt build
 ```
