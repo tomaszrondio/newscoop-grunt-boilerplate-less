@@ -4,6 +4,34 @@
 
 This is a Newscoop theme boilerplate for Grunt workflow.
 
+## How it makes life easier
+
+- You don't have to care about putting all libraries or new files in html
+  - Whatever You put in assets/js/vendor folder will be merged into assets/js/dist/vendor.js
+  - Whatever You put in assets/js folder will be merged into assets/js/dist/scripts.js
+  - Same happens with css/less. Whatever You import in style.less file will be merged into style.css
+- it speeds up website/server response
+- less is really cool
+- it speeds up development
+
+
+
+## Folder structure
+
+- /assets
+  - /css
+    - /components (holds files where each represents other feature)
+    - /fonts
+    - /vendor (third party css files)
+    - style.less (container of all styles)
+    - _general.less (main less file)
+    - variables-mixins.less (contains less variables and mixins)
+  - /img
+  - /js
+    - /dist (distribution ready files)
+    - /vendor (third party libraries)
+
+
 ## How to install
 You need node.js, npm and grunt CLI.
 
@@ -87,26 +115,3 @@ Use it before deployment.
 grunt build
 ```
 
-## Folder structure
-
-- /assets
-  - /css
-    - /components (holds files where each represents other feature)
-    - /fonts
-    - /vendor (third party css files)
-    - style.less (container of all styles)
-    - _general.less (main less file)
-    - variables-mixins.less (contains less variables and mixins)
-  - /img
-  - /js
-    - /dist (distribution ready files)
-    - /vendor (third party libraries)
-
-
-## How it makes life easier
-
-Whatever You put in assets/js/vendor folder will be merged into assets/js/dist/vendor.js
-Whatever You put in assets/js folder will be merged into assets/js/dist/scripts.js
-so You don't have to care about putting all libraries or new files in html
-
-Same happens with css/less. Whatever You import in style.less file will be merged into style.css
