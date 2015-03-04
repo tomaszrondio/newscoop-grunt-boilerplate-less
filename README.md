@@ -44,8 +44,10 @@ Type 'grunt watch' in console and forget about it. It does it's magic automatica
 
 It watches for changes in less and js files.
 
+#### CSS
+
 - less gets compiled to style.css
-- - style.css gets autoprefixed
+- style.css gets autoprefixed
 
 Just write regular css code and Autoprefixer will add prefixes for old browsers.
 
@@ -67,12 +69,16 @@ a{
 ```
 
 
+#### Javascript
 
-- js files are merged to two files:
-- - vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
-- - scripts.js with custom js from assets/js folder
+js files are merged to two files:
+- vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
+- scripts.js with custom js from assets/js folder
 
 ### Build
+
+It does everything that "watch" task does plus it minifies js and css.
+
 This one is for deployment
 ```
 grunt build
