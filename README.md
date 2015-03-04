@@ -103,3 +103,10 @@ grunt build
     - /vendor (third party libraries)
 
 
+## How it makes life easier
+
+Whatever You put in assets/js/vendor folder will be merged into assets/js/dist/vendor.js
+Whatever You put in assets/js folder will be merged into assets/js/dist/scripts.js
+so You don't have to care about putting all libraries or new files in html
+
+Same happens with css/less. Whatever You import in style.less file will be merged into style.css
