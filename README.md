@@ -1,4 +1,4 @@
-# newscoop-theme-grunt-boilerplate
+# Newscoop theme Grunt boilerplate
 
 ## What is that?
 
@@ -16,25 +16,63 @@ sudo npm install npm -g
 
 - install Grunt CLI
 ```
-npm install -g grunt-cli
+sudo npm install -g grunt-cli
 ```
 
 
 Clone/Copy this repository and run
 ```
-npm install
+sudo npm install
 ```
 All dependencies are now installed and You are ready to start using Grunt magic.
+Note that it created "node_modules" folder if You didn't have it before.
+
+### Important!
+
+Add these to Your .gitignore file
+```
+node_modules/
+.grunt
+```
 
 ## Tasks
 
 ### Watch
-This one is prepared for development process
+This one is prepared for development process.
+
+Type 'grunt watch' in console and forget about it. It does it's magic automatically.
+
+It watches for changes in less and js files.
+
+- less gets compiled to style.css
+- - style.css gets autoprefixed
+
+Just write regular css code and Autoprefixer will add prefixes for old browsers.
+
+css:
 ```
-grunt watch
+a{
+  transition: all 0.3s;
+}
+```
+output:
+```
+a{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 ```
 
-### build
+
+
+- js files are merged to two files:
+- - vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
+- - scripts.js with custom js from assets/js folder
+
+### Build
 This one is for deployment
 ```
 grunt build
