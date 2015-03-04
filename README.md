@@ -71,7 +71,7 @@ a{
 
 ##### Javascript
 
-js files are merged to two files:
+js files are merged into two files:
 - vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
 - scripts.js with custom js from assets/js folder
 
@@ -79,10 +79,27 @@ js files are merged to two files:
 
 This one is for deployment
 
-It does everything that "watch" task does plus it minifies both js and css.
+It does everything that "watch" task does plus it minifies css.
 Use it before deployment.
 
 
 ```
 grunt build
 ```
+
+## Folder structure
+
+- /assets
+  - /css
+    - /components (holds files where each represents other feature)
+    - /fonts
+    - /vendor (third party css files)
+    - style.less (container of all styles)
+    - _general.less (main less file)
+    - variables-mixins.less (contains less variables and mixins)
+  - /img
+  - /js
+    - /dist (distribution ready files)
+    - /vendor (third party libraries)
+
+
