@@ -107,7 +107,7 @@ js files are merged into two files:
 
 This one is for deployment
 
-It does everything that "watch" task does plus it minifies css and increments VAR_ENV for css and js versioning.
+It does everything that "watch" task does plus it minifies css and increments VER_ENV for css and js versioning.
 
 Use it before deployment.
 
