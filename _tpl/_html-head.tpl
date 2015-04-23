@@ -3,7 +3,7 @@
   <head>
     <!-- grunt boilerplate -->
       <!-- assets versioning -->
-      {{ assign var="VER_ENV" value="0.1" scope="global" }}
+      {{ assign var="VER_ENV" value="0.13" scope="global" }}
 
       <link href="{{ url static_file="assets/css/style.css?v=$VER_ENV" }}" rel="stylesheet">
 

@@ -99,15 +99,14 @@ a{
 
 ##### Javascript
 
-js files are merged into two files:
-- vendor.js with all third party libraries (jQuery, it's plugins, bootstrap.js etc.) from assets/js/vendor folder.
-- scripts.js with custom js from assets/js folder
+js files are merged into all.js file with sourcemap included
+more about sourcemaps http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
 
 ### Build
 
 This one is for deployment
 
-It does everything that "watch" task does plus it minifies css and increments VER_ENV for css and js versioning.
+It does everything that "watch" task does plus it minifies css/js and increments VER_ENV for css and js versioning.
 
 Use it before deployment.
 
